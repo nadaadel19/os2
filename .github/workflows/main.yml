@@ -9,10 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "printing files before"
-        run: ls
-      
+    
       - uses: actions/checkout@v3  
+      - name: "docker login"
+        run: docker login --username nadaadel19 --password dckr_pat_fKTm94hZXuwy58LgEXRMlqa3F5g
   
-      - name: "printing files after"
-        run: ls 
